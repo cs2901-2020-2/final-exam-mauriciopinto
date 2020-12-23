@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: examen.TestFunctionClass
 -------------------------------------------------------------------------------
-Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.888 s - in examen.TestFunctionClass
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.821 s - in examen.TestFunctionClass

@@ -24,6 +24,7 @@ public class Player {
         while (result != -1) {
             result = session.setPiece(x, y);
         }
+        points += result;
         return points;
     }
 

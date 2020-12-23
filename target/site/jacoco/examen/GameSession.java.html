@@ -50,7 +50,7 @@ public class GameSession {
 
     public boolean checkPiece (int x, int y) {
 <span class="fc bfc" id="L52" title="All 2 branches covered.">        for (Point currentPoint : currentPiece.getPoints()) {</span>
-<span class="pc bpc" id="L53" title="4 of 12 branches missed.">            if (x + currentPoint.getX() &gt; 8 || y - currentPoint.getY() &lt; 0 || x &lt; 0 || x &gt; 8 || y &lt; 0 || y &gt; 8)</span>
+<span class="pc bpc" id="L53" title="5 of 12 branches missed.">            if (x + currentPoint.getX() &gt; 8 || y - currentPoint.getY() &lt; 0 || x &lt; 0 || x &gt; 8 || y &lt; 0 || y &gt; 8)</span>
 <span class="fc" id="L54">                return false;</span>
             else {
 <span class="fc bfc" id="L56" title="All 2 branches covered.">                if (board[x + currentPoint.getX()][y - currentPoint.getY()] == 1)</span>

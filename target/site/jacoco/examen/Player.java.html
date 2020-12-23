@@ -24,26 +24,27 @@ public class Player {
 <span class="nc bnc" id="L24" title="All 2 branches missed.">        while (result != -1) {</span>
 <span class="nc" id="L25">            result = session.setPiece(x, y);</span>
         }
-<span class="nc" id="L27">        return points;</span>
+<span class="nc" id="L27">        points += result;</span>
+<span class="nc" id="L28">        return points;</span>
     }
 
     public int getPoints () {
-<span class="fc" id="L31">        return points;</span>
+<span class="fc" id="L32">        return points;</span>
     }
 
     public void play () {
-<span class="nc bnc" id="L35" title="All 2 branches missed.">        while (session.getStatus() == 0) {</span>
-<span class="nc" id="L36">            setNextPiece();</span>
-<span class="nc" id="L37">            session.displayBoard();</span>
+<span class="nc bnc" id="L36" title="All 2 branches missed.">        while (session.getStatus() == 0) {</span>
+<span class="nc" id="L37">            setNextPiece();</span>
+<span class="nc" id="L38">            session.displayBoard();</span>
         }
-<span class="nc" id="L39">    }</span>
+<span class="nc" id="L40">    }</span>
 
     public String getUsername () {
-<span class="fc" id="L42">        return username;</span>
+<span class="fc" id="L43">        return username;</span>
     }
 
     public void setPieceFixed (int x, int y) {
-<span class="fc" id="L46">        session.setPiece(x, y);</span>
-<span class="fc" id="L47">    }</span>
+<span class="fc" id="L47">        session.setPiece(x, y);</span>
+<span class="fc" id="L48">    }</span>
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.4.201905082037</span></div></body></html>
