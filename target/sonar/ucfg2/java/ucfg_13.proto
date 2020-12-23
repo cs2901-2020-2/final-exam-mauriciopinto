@@ -1,0 +1,78 @@
+
+6examen.GameSession#generateRandomPiece()Lexamen/Piece;t
+j/home/mauricio/Documents/2020-2/Software/Examen_Final_Mauricio_Pinto/src/main/java/examen/GameSession.java   (%"1*Ê
+1t
+j/home/mauricio/Documents/2020-2/Software/Examen_Final_Mauricio_Pinto/src/main/java/examen/GameSession.java! !(√
+¿
+t
+j/home/mauricio/Documents/2020-2/Software/Examen_Final_Mauricio_Pinto/src/main/java/examen/GameSession.java! !( 
+%0java.security.SecureRandom"__id* *
+examen.GameSession"
+randí
+è
+t
+j/home/mauricio/Documents/2020-2/Software/Examen_Final_Mauricio_Pinto/src/main/java/examen/GameSession.java!$ !(2	
+%1int"__id*
+""ﬂ‹
+t
+j/home/mauricio/Documents/2020-2/Software/Examen_Final_Mauricio_Pinto/src/main/java/examen/GameSession.java! !(3	
+%2int"java.util.Random#nextInt(I)I*"
+ 
+%0java.security.SecureRandom*
+	
+%1int2
+nextInt(I)ß
+§
+t
+j/home/mauricio/Documents/2020-2/Software/Examen_Final_Mauricio_Pinto/src/main/java/examen/GameSession.java" "(
+%3java.util.logging.Logger"__id*
+""»
+≈
+t
+j/home/mauricio/Documents/2020-2/Software/Examen_Final_Mauricio_Pinto/src/main/java/examen/GameSession.java" "(@
+%4java.lang.String"__concat*#!
+La siguiente pieza es de tipo: *
+""èå
+t
+j/home/mauricio/Documents/2020-2/Software/Examen_Final_Mauricio_Pinto/src/main/java/examen/GameSession.java" "(A
+
+%5void"2java.util.logging.Logger#info(Ljava/lang/String;)V* 
+
+%3java.util.logging.Logger*
+
+%4java.lang.String2info(Ljava/lang/String;)√
+¿
+t
+j/home/mauricio/Documents/2020-2/Software/Examen_Final_Mauricio_Pinto/src/main/java/examen/GameSession.java# #( 
+%6java.security.SecureRandom"__id* *
+examen.GameSession"
+randí
+è
+t
+j/home/mauricio/Documents/2020-2/Software/Examen_Final_Mauricio_Pinto/src/main/java/examen/GameSession.java#' #(5	
+%7int"__id*
+""ﬂ‹
+t
+j/home/mauricio/Documents/2020-2/Software/Examen_Final_Mauricio_Pinto/src/main/java/examen/GameSession.java# #(6	
+%8int"java.util.Random#nextInt(I)I*"
+ 
+%6java.security.SecureRandom*
+	
+%7int2
+nextInt(I)õò
+t
+j/home/mauricio/Documents/2020-2/Software/Examen_Final_Mauricio_Pinto/src/main/java/examen/GameSession.java# #(
+%9examen.Piece"examen.Pieceº
+π
+t
+j/home/mauricio/Documents/2020-2/Software/Examen_Final_Mauricio_Pinto/src/main/java/examen/GameSession.java# #(7
+%10"examen.Piece#<init>(I)V*
+
+%9examen.Piece*
+	
+%8int"å
+t
+j/home/mauricio/Documents/2020-2/Software/Examen_Final_Mauricio_Pinto/src/main/java/examen/GameSession.java# #(8
+
+%9examen.PieceB
+examen.GameSession

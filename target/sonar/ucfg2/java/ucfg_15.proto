@@ -1,0 +1,128 @@
+
+"examen.GameSession#checkPiece(II)Zt
+j/home/mauricio/Documents/2020-2/Software/Examen_Final_Mauricio_Pinto/src/main/java/examen/GameSession.java1 1("15*Ç
+13t
+j/home/mauricio/Documents/2020-2/Software/Examen_Final_Mauricio_Pinto/src/main/java/examen/GameSession.java3/ 3(0Â¿
+t
+j/home/mauricio/Documents/2020-2/Software/Examen_Final_Mauricio_Pinto/src/main/java/examen/GameSession.java33 3(F	
+%3int"examen.Point#getY()I*
+
+currentPointexamen.Point2getY()*
+7
+8*ï
+2t
+j/home/mauricio/Documents/2020-2/Software/Examen_Final_Mauricio_Pinto/src/main/java/examen/GameSession.java; ;(¥
+¢
+t
+j/home/mauricio/Documents/2020-2/Software/Examen_Final_Mauricio_Pinto/src/main/java/examen/GameSession.java; ;(
+currentPointexamen.Point"__id*
+""Ã
+À
+t
+j/home/mauricio/Documents/2020-2/Software/Examen_Final_Mauricio_Pinto/src/main/java/examen/GameSession.java; ;(
+currentPointexamen.Point"
+__arrayGet*
+
+%7java.util.List*
+""*
+3
+1*È
+14t
+j/home/mauricio/Documents/2020-2/Software/Examen_Final_Mauricio_Pinto/src/main/java/examen/GameSession.java3 3(Â¿
+t
+j/home/mauricio/Documents/2020-2/Software/Examen_Final_Mauricio_Pinto/src/main/java/examen/GameSession.java3 3('	
+%2int"examen.Point#getX()I*
+
+currentPointexamen.Point2getX()*
+13
+8*ˆ
+3t
+j/home/mauricio/Documents/2020-2/Software/Examen_Final_Mauricio_Pinto/src/main/java/examen/GameSession.java< <(Â¿
+t
+j/home/mauricio/Documents/2020-2/Software/Examen_Final_Mauricio_Pinto/src/main/java/examen/GameSession.java< <()	
+%8int"examen.Point#getX()I*
+
+currentPointexamen.Point2getX()Â¿
+t
+j/home/mauricio/Documents/2020-2/Software/Examen_Final_Mauricio_Pinto/src/main/java/examen/GameSession.java</ <(B	
+%9int"examen.Point#getY()I*
+
+currentPointexamen.Point2getY()*
+2*ž
+15t
+j/home/mauricio/Documents/2020-2/Software/Examen_Final_Mauricio_Pinto/src/main/java/examen/GameSession.java2" 2(.½
+º
+t
+j/home/mauricio/Documents/2020-2/Software/Examen_Final_Mauricio_Pinto/src/main/java/examen/GameSession.java2" 2(.
+%0examen.Piece"__id*(*&
+examen.GameSession"
+currentPieceÜÙ
+t
+j/home/mauricio/Documents/2020-2/Software/Examen_Final_Mauricio_Pinto/src/main/java/examen/GameSession.java2" 2(:
+%1java.util.List"(examen.Piece#getPoints()Ljava/util/List;*
+
+%0examen.Piece2getPoints()*
+5*
+4t
+j/home/mauricio/Documents/2020-2/Software/Examen_Final_Mauricio_Pinto/src/main/java/examen/GameSession.java;" ;(.½
+º
+t
+j/home/mauricio/Documents/2020-2/Software/Examen_Final_Mauricio_Pinto/src/main/java/examen/GameSession.java;" ;(.
+%6examen.Piece"__id*(*&
+examen.GameSession"
+currentPieceÜÙ
+t
+j/home/mauricio/Documents/2020-2/Software/Examen_Final_Mauricio_Pinto/src/main/java/examen/GameSession.java;" ;(:
+%7java.util.List"(examen.Piece#getPoints()Ljava/util/List;*
+
+%6examen.Piece2getPoints()*
+2*ð
+5t
+j/home/mauricio/Documents/2020-2/Software/Examen_Final_Mauricio_Pinto/src/main/java/examen/GameSession.java2 2(¥
+¢
+t
+j/home/mauricio/Documents/2020-2/Software/Examen_Final_Mauricio_Pinto/src/main/java/examen/GameSession.java2 2(
+currentPointexamen.Point"__id*
+""Ã
+À
+t
+j/home/mauricio/Documents/2020-2/Software/Examen_Final_Mauricio_Pinto/src/main/java/examen/GameSession.java2 2(
+currentPointexamen.Point"
+__arrayGet*
+
+%1java.util.List*
+""*
+14
+4*ù
+6t
+j/home/mauricio/Documents/2020-2/Software/Examen_Final_Mauricio_Pinto/src/main/java/examen/GameSession.java7 7( "~
+t
+j/home/mauricio/Documents/2020-2/Software/Examen_Final_Mauricio_Pinto/src/main/java/examen/GameSession.java7 7(!
+""*‹
+7t
+j/home/mauricio/Documents/2020-2/Software/Examen_Final_Mauricio_Pinto/src/main/java/examen/GameSession.java6 6(Â¿
+t
+j/home/mauricio/Documents/2020-2/Software/Examen_Final_Mauricio_Pinto/src/main/java/examen/GameSession.java6 6(1	
+%4int"examen.Point#getX()I*
+
+currentPointexamen.Point2getX()Â¿
+t
+j/home/mauricio/Documents/2020-2/Software/Examen_Final_Mauricio_Pinto/src/main/java/examen/GameSession.java67 6(J	
+%5int"examen.Point#getY()I*
+
+currentPointexamen.Point2getY()*
+5
+6*ù
+8t
+j/home/mauricio/Documents/2020-2/Software/Examen_Final_Mauricio_Pinto/src/main/java/examen/GameSession.java4 4("~
+t
+j/home/mauricio/Documents/2020-2/Software/Examen_Final_Mauricio_Pinto/src/main/java/examen/GameSession.java4 4(
+""*ù
+1t
+j/home/mauricio/Documents/2020-2/Software/Examen_Final_Mauricio_Pinto/src/main/java/examen/GameSession.java> >("~
+t
+j/home/mauricio/Documents/2020-2/Software/Examen_Final_Mauricio_Pinto/src/main/java/examen/GameSession.java> >(
+"":
+"":
+""B
+examen.GameSession
