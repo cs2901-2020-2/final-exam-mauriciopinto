@@ -1,18 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Player.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">Examen_Final_Mauricio_Pinto</a> &gt; <a href="index.source.html" class="el_package">examen</a> &gt; <span class="el_source">Player.java</span></div><h1>Player.java</h1><pre class="source lang-java linenums">package examen;
 
+import java.util.Scanner;
+import java.util.logging.Logger;
+
 public class Player {
+<span class="fc" id="L7">    static final Logger logger = Logger.getLogger(Player.class.getName());</span>
+<span class="fc" id="L8">    private static Scanner in = new Scanner(System.in);</span>
     private String username;
-<span class="fc" id="L5">    private int points = 0;</span>
+<span class="fc" id="L10">    private int points = 0;</span>
     private GameSession session;
 
-<span class="fc" id="L8">    public Player (String username) {</span>
-<span class="fc" id="L9">        this.username = username;</span>
-<span class="fc" id="L10">        session = GameSession.getInstance();</span>
-<span class="fc" id="L11">    }</span>
+<span class="fc" id="L13">    public Player (String username) {</span>
+<span class="fc" id="L14">        this.username = username;</span>
+<span class="fc" id="L15">        session = GameSession.getInstance();</span>
+<span class="fc" id="L16">    }</span>
 
-    public int setNextPiece ( int x, int y) {
-<span class="nc" id="L14">        points += session.setPiece (x, y, username);</span>
-<span class="nc" id="L15">        return points;</span>
+    public int setNextPiece () {
+<span class="nc" id="L19">        logger.info (&quot;Elige la coordenada x: &quot;);</span>
+<span class="nc" id="L20">        int x = in.nextInt();</span>
+<span class="nc" id="L21">        logger.info (&quot;Elige la coordenada y: &quot;);</span>
+<span class="nc" id="L22">        int y = in.nextInt();</span>
+<span class="nc" id="L23">        int result = session.setPiece (x, y);</span>
+<span class="nc bnc" id="L24" title="All 2 branches missed.">        while (result != -1) {</span>
+<span class="nc" id="L25">            result = session.setPiece(x, y);</span>
+        }
+<span class="nc" id="L27">        return points;</span>
     }
+
+    public int getPoints () {
+<span class="fc" id="L31">        return points;</span>
+    }
+
+    public void play () {
+<span class="nc bnc" id="L35" title="All 2 branches missed.">        while (session.getStatus() == 0) {</span>
+<span class="nc" id="L36">            setNextPiece();</span>
+        }
+<span class="nc" id="L38">    }</span>
+
+    public String getUsername () {
+<span class="fc" id="L41">        return username;</span>
+    }
+
+    public void setPieceFixed (int x, int y) {
+<span class="fc" id="L45">        session.setPiece(x, y);</span>
+<span class="fc" id="L46">    }</span>
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.4.201905082037</span></div></body></html>

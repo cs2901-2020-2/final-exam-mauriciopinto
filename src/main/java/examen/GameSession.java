@@ -1,6 +1,7 @@
 package examen;
 
 import java.security.SecureRandom;
+import java.util.logging.Level;
 import java.util.logging.Logger;
 
 public class GameSession {
@@ -10,7 +11,8 @@ public class GameSession {
     private int[][] board;
     private SecureRandom rand = new SecureRandom();
     private Piece currentPiece;
-    private final static int possiblePieces = 8;
+    private static final int POSSIBLE_PIECES = 8;
+    private int status = 0;
 
     private GameSession () {
         board = new int[9][9];
@@ -29,13 +31,13 @@ public class GameSession {
         return instance;
     }
 
-    private Piece generateRandomPiece () {
-        int newPiece = rand.nextInt(possiblePieces);
-        logger.info("La siguiente pieza es de tipo: " + newPiece);
-        return new Piece (rand.nextInt(possiblePieces));
+    public Piece generateRandomPiece () {
+        int newPiece = rand.nextInt(POSSIBLE_PIECES);
+        logger.log(Level.INFO, "La siguiente pieza es de tipo: {0}", newPiece);
+        return new Piece (rand.nextInt(POSSIBLE_PIECES));
     }
 
-    private boolean checkBoard () {
+    public boolean checkBoard () {
         boolean lost = true;
         for (int i = 0; i < 9; i++) {
             for (int j = 0; j < 9; j++) {
@@ -46,9 +48,9 @@ public class GameSession {
         return lost;
     }
 
-    private boolean checkPiece (int x, int y) {
+    public boolean checkPiece (int x, int y) {
         for (Point currentPoint : currentPiece.getPoints()) {
-            if (x - currentPoint.getX() < 0 || y + currentPoint.getY() > 9 || x < 0 || x > 9 || y < 0 || y > 9)
+            if (x - currentPoint.getX() < 0 || y + currentPoint.getY() > 8 || x < 0 || x > 8 || y < 0 || y > 8)
                 return false;
             else {
                 if (board[x - currentPoint.getX()][y + currentPoint.getY()] == 1)
@@ -62,7 +64,7 @@ public class GameSession {
         return true;
     }
 
-    private int checkCompletions() {
+    public int checkMatch() {
         int points = 0;
         int completions = 0;
         boolean rowColBlockIsComplete;
@@ -111,19 +113,38 @@ public class GameSession {
         return points * completions;
     }
 
-    public int setPiece (int x, int y, String username) {
-        while (!checkPiece (x, y)) {
+    public int setPiece (int x, int y) {
+        if (!checkPiece (x, y)) {
             logger.info ("Elige otro espacio!");
+            return -1;
         }
-        int points = checkCompletions();
-        logger.info ("Ganaste " + Integer.toString(points) + " puntos!");
+        int points = checkMatch();
+        logger.log (Level.INFO, "Ganaste {0} puntos!", Integer.toString(points));
         currentPiece = generateRandomPiece();
-        if (!checkBoard ())
-            logger.info("Has perdido!");
+        if (checkBoard ())
+            status = 1;
         return points;
     }
 
-    public void play (String username) {
-        logger.info("Empieza el juego!");
+    public int getStatus() {
+        return status;
+    }
+
+    public int[][] getBoard () {
+        return board;
+    }
+
+    public Piece getCurrentPiece() {
+        return currentPiece;
+    }
+
+    public void displayBoard () {
+        String line = "";
+        for (int i = 0; i < 9; i++) {
+            for (int j = 0; j < 9; j++) {
+                line += Integer.toString(i);
+            }
+            logger.info(line);
+        }
     }
 }

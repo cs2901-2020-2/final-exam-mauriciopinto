@@ -9,29 +9,23 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Surefire suite</th></tr>
-<tr><td><a href="#t0">Surefire test</a></td><td class="num">2</td><td class="num">0</td><td class="num">0</td><td class="num attn">3</td><td class="num">149</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Surefire test</a></td><td class="num">6</td><td class="num">0</td><td class="num">0</td><td class="num attn">2</td><td class="num">128</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Surefire suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Surefire test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="3">examen.TestFunctionClass</td><td><a href="#m0">CreateInstanceTest</a></td><td rowspan="1">1608742808478</td><td rowspan="1">53</td></tr><tr class="failedeven"><td><a href="#m1">CreatePieceTest</a></td><td rowspan="1">1608742808551</td><td rowspan="1">0</td></tr><tr class="failedeven"><td><a href="#m2">checksetPiece</a></td><td rowspan="1">1608742808552</td><td rowspan="1">1</td></tr><tr><th colspan="4">Surefire test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">examen.TestFunctionClass</td><td><a href="#m3">generatePointTest</a></td><td rowspan="1">1608742808554</td><td rowspan="1">9</td></tr><tr class="passedeven"><td><a href="#m4">generateRandomPieceTest</a></td><td rowspan="1">1608742808564</td><td rowspan="1">0</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Surefire suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Surefire test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="2">examen.TestFunctionClass</td><td><a href="#m0">CreatePieceTest</a></td><td rowspan="1">1608748253855</td><td rowspan="1">2</td></tr><tr class="failedeven"><td><a href="#m1">checkStatusTest</a></td><td rowspan="1">1608748253876</td><td rowspan="1">1</td></tr><tr><th colspan="4">Surefire test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="6">examen.TestFunctionClass</td><td><a href="#m2">CreateInstanceTest</a></td><td rowspan="1">1608748253803</td><td rowspan="1">50</td></tr><tr class="passedeven"><td><a href="#m3">checkCompletionsTest</a></td><td rowspan="1">1608748253871</td><td rowspan="1">1</td></tr><tr class="passedeven"><td><a href="#m4">checkSetPiece</a></td><td rowspan="1">1608748253872</td><td rowspan="1">3</td></tr><tr class="passedeven"><td><a href="#m5">createPlayerTest</a></td><td rowspan="1">1608748253878</td><td rowspan="1">0</td></tr><tr class="passedeven"><td><a href="#m6">generatePointTest</a></td><td rowspan="1">1608748253879</td><td rowspan="1">0</td></tr><tr class="passedeven"><td><a href="#m7">generateRandomPieceTest</a></td><td rowspan="1">1608748253880</td><td rowspan="1">1</td></tr></tbody>
 </table>
-<h2>Surefire test</h2><h3 id="m0">examen.TestFunctionClass#CreateInstanceTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException
-	at examen.Piece.&lt;init&gt;(Piece.java:25)
-	at examen.GameSession.generateRandomPiece(GameSession.java:35)
-	at examen.GameSession.&lt;init&gt;(GameSession.java:17)
-	at examen.GameSession.getInstance(GameSession.java:28)
-	at examen.TestFunctionClass.CreateInstanceTest(TestFunctionClass.java:13)
+<h2>Surefire test</h2><h3 id="m0">examen.TestFunctionClass#CreatePieceTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: Lists differ at element [0]: examen.Point@3679d92e != examen.Point@47b11ec7 expected [examen.Point@3679d92e] but found [examen.Point@47b11ec7]
+	at examen.TestFunctionClass.CreatePieceTest(TestFunctionClass.java:42)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">examen.TestFunctionClass#CreatePieceTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException
-	at examen.Piece.&lt;init&gt;(Piece.java:18)
-	at examen.TestFunctionClass.CreatePieceTest(TestFunctionClass.java:20)
+... Removed 37 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">examen.TestFunctionClass#checkStatusTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [1] but found [0]
+	at examen.TestFunctionClass.checkStatusTest(TestFunctionClass.java:75)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">examen.TestFunctionClass#checksetPiece</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException
-	at examen.Player.setNextPiece(Player.java:14)
-	at examen.TestFunctionClass.checksetPiece(TestFunctionClass.java:49)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">examen.TestFunctionClass#generatePointTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m4">examen.TestFunctionClass#generateRandomPieceTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+... Removed 38 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">examen.TestFunctionClass#CreateInstanceTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">examen.TestFunctionClass#checkCompletionsTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">examen.TestFunctionClass#checkSetPiece</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">examen.TestFunctionClass#createPlayerTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">examen.TestFunctionClass#generatePointTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">examen.TestFunctionClass#generateRandomPieceTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

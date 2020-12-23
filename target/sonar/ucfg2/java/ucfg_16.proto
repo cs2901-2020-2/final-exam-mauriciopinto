@@ -1,9 +1,46 @@
 
-&examen.GameSession#checkCompletions()It
-j/home/mauricio/Documents/2020-2/Software/Examen_Final_Mauricio_Pinto/src/main/java/examen/GameSession.javaA A( "1*ù
-1t
-j/home/mauricio/Documents/2020-2/Software/Examen_Final_Mauricio_Pinto/src/main/java/examen/GameSession.javao o("~
+4examen.GameSession#getInstance()Lexamen/GameSession;t
+j/home/mauricio/Documents/2020-2/Software/Examen_Final_Mauricio_Pinto/src/main/java/examen/GameSession.java ()"3*¦
+2t
+j/home/mauricio/Documents/2020-2/Software/Examen_Final_Mauricio_Pinto/src/main/java/examen/GameSession.java ((§¤
 t
-j/home/mauricio/Documents/2020-2/Software/Examen_Final_Mauricio_Pinto/src/main/java/examen/GameSession.javao o($
-""B
+j/home/mauricio/Documents/2020-2/Software/Examen_Final_Mauricio_Pinto/src/main/java/examen/GameSession.java (&
+%1examen.GameSession"examen.GameSession¹
+¶
+t
+j/home/mauricio/Documents/2020-2/Software/Examen_Final_Mauricio_Pinto/src/main/java/examen/GameSession.java ((
+%2"examen.GameSession#<init>()V*
+
+%1examen.GameSession¿
+¼
+t
+j/home/mauricio/Documents/2020-2/Software/Examen_Final_Mauricio_Pinto/src/main/java/examen/GameSession.java (("
+examen.GameSession"
+
+instance"__id*
+
+%1examen.GameSession*
+1*É
+3t
+j/home/mauricio/Documents/2020-2/Software/Examen_Final_Mauricio_Pinto/src/main/java/examen/GameSession.java (Å
+Â
+t
+j/home/mauricio/Documents/2020-2/Software/Examen_Final_Mauricio_Pinto/src/main/java/examen/GameSession.java ( 	
+%0int"'examen.GameSession#increaseSemaphore()I*"
+examen.GameSession*
+2
+1*Ð
+1t
+j/home/mauricio/Documents/2020-2/Software/Examen_Final_Mauricio_Pinto/src/main/java/examen/GameSession.java (¿
+¼
+t
+j/home/mauricio/Documents/2020-2/Software/Examen_Final_Mauricio_Pinto/src/main/java/examen/GameSession.java (
+%3examen.GameSession"__id*$*"
+examen.GameSession"
+
+instance"’
+t
+j/home/mauricio/Documents/2020-2/Software/Examen_Final_Mauricio_Pinto/src/main/java/examen/GameSession.java (
+
+%3examen.GameSessionB"
 examen.GameSession

@@ -1,64 +1,39 @@
 package examen;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Piece {
     private List<Point> points;
 
     public Piece (int type) {
-        switch (type) {
-            case 0:
-                this.points.add (new Point(0, 2));
-                this.points.add (new Point(1, 2));
-                this.points.add (new Point(2, 2));
-                this.points.add (new Point(2, 1));
-                this.points.add (new Point(2, 0));
-                break;
-            case 1:
-                this.points.add(new Point(0, 0));
-                this.points.add (new Point(0, 1));
-                this.points.add (new Point(0, 2));
-                this.points.add (new Point(1, 0));
-                this.points.add (new Point(2, 0));
-                break;
-            case 2:
-                this.points.add (new Point(0, 0));
-                this.points.add (new Point(0, 1));
-                this.points.add (new Point(0, 2));
-                break;
-            case 3:
-                this.points.add (new Point(0, 1));
-                this.points.add (new Point(1, 1));
-                this.points.add (new Point(2, 1));
-                break;
-            case 4:
-                this.points.add (new Point(0, 1));
-                this.points.add (new Point(1, 1));
-                this.points.add (new Point(2, 0));
-                this.points.add (new Point(2, 1));
-                this.points.add (new Point(2, 2));
-                break;
-            case 5:
-                this.points.add (new Point(0, 0));
-                this.points.add (new Point(0, 1));
-                this.points.add (new Point(0, 2));
-                this.points.add (new Point(1, 1));
-                this.points.add (new Point(2, 1));
-                break;
-            case 6:
-                this.points.add (new Point(0, 2));
-                this.points.add (new Point(1, 2));
-                this.points.add (new Point(2, 1));
-                this.points.add (new Point(2, 2));
-                break;
-            case 7:
-                this.points.add (new Point(0, 0));
-                this.points.add (new Point(0, 1));
-                this.points.add (new Point(1, 1));
-                this.points.add (new Point(2, 1));
-                break;
-            default:
-                break;
+        points = new ArrayList<>();
+        if (type == 0 || type == 1 || type == 2 || type == 5 || type == 6) {
+            this.points.add (new Point(0, 2));
+        }
+        if (type == 1 || type == 2 || type == 3 || type == 4 || type == 5 || type == 7) {
+            this.points.add (new Point(0, 1));
+        }
+        if (type == 1 || type == 2 || type == 5 || type == 7) {
+            this.points.add (new Point(0, 0));
+        }
+        if (type == 0 || type == 6) {
+            this.points.add (new Point(1, 2));
+        }
+        if (type == 3 || type == 4 || type == 5 || type == 7) {
+            this.points.add (new Point(1, 1));
+        }
+        if (type == 1) {
+            this.points.add (new Point(1, 0));
+        }
+        if (type == 0 || type == 4 || type == 6) {
+            this.points.add (new Point(2, 2));
+        }
+        if (type == 0 || type == 3 || type == 4 || type == 5 || type == 6 || type == 7) {
+            this.points.add (new Point(2, 1));
+        }
+        if (type == 0 || type == 1 || type == 4) {
+            this.points.add (new Point(2, 0));
         }
     }
 

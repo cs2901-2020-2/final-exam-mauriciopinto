@@ -5,9 +5,8 @@
     <classes>
       <class name="examen.TestFunctionClass">
         <methods>
-          <include name="checksetPiece"/>
-          <include name="CreateInstanceTest"/>
           <include name="CreatePieceTest"/>
+          <include name="checkStatusTest"/>
         </methods>
       </class> <!-- examen.TestFunctionClass -->
     </classes>

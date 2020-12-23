@@ -1,33 +1,90 @@
 
-examen.Player#setNextPiece(II)Io
-e/home/mauricio/Documents/2020-2/Software/Examen_Final_Mauricio_Pinto/src/main/java/examen/Player.java ("1*¯
-1o
-e/home/mauricio/Documents/2020-2/Software/Examen_Final_Mauricio_Pinto/src/main/java/examen/Player.java (¥
+examen.Player#setNextPiece()Io
+e/home/mauricio/Documents/2020-2/Software/Examen_Final_Mauricio_Pinto/src/main/java/examen/Player.java ("4*î
+2o
+e/home/mauricio/Documents/2020-2/Software/Examen_Final_Mauricio_Pinto/src/main/java/examen/Player.java (µ
+≤
+o
+e/home/mauricio/Documents/2020-2/Software/Examen_Final_Mauricio_Pinto/src/main/java/examen/Player.java (
+%10examen.GameSession"__id**
+examen.Player"	
+session›⁄
+o
+e/home/mauricio/Documents/2020-2/Software/Examen_Final_Mauricio_Pinto/src/main/java/examen/Player.java (+
+
+%11int" examen.GameSession#setPiece(II)I*
+
+%10examen.GameSession*
+""*
+""2setPiece(II)*
+2
+1*È
+4o
+e/home/mauricio/Documents/2020-2/Software/Examen_Final_Mauricio_Pinto/src/main/java/examen/Player.java (¢
+ü
+o
+e/home/mauricio/Documents/2020-2/Software/Examen_Final_Mauricio_Pinto/src/main/java/examen/Player.java (
+%0java.util.logging.Logger"__id*
+""çä
+o
+e/home/mauricio/Documents/2020-2/Software/Examen_Final_Mauricio_Pinto/src/main/java/examen/Player.java (/
+
+%1void"2java.util.logging.Logger#info(Ljava/lang/String;)V* 
+
+%0java.util.logging.Logger*
+Elige la coordenada x: 2info(Ljava/lang/String;)Æ
+´
+o
+e/home/mauricio/Documents/2020-2/Software/Examen_Final_Mauricio_Pinto/src/main/java/examen/Player.java (
+%2java.util.Scanner"__id**
+examen.Player"
+in√¿
+o
+e/home/mauricio/Documents/2020-2/Software/Examen_Final_Mauricio_Pinto/src/main/java/examen/Player.java (	
+%3int"java.util.Scanner#nextInt()I*
+
+%2java.util.Scanner2	nextInt()¢
+ü
+o
+e/home/mauricio/Documents/2020-2/Software/Examen_Final_Mauricio_Pinto/src/main/java/examen/Player.java (
+%4java.util.logging.Logger"__id*
+""çä
+o
+e/home/mauricio/Documents/2020-2/Software/Examen_Final_Mauricio_Pinto/src/main/java/examen/Player.java (/
+
+%5void"2java.util.logging.Logger#info(Ljava/lang/String;)V* 
+
+%4java.util.logging.Logger*
+Elige la coordenada y: 2info(Ljava/lang/String;)Æ
+´
+o
+e/home/mauricio/Documents/2020-2/Software/Examen_Final_Mauricio_Pinto/src/main/java/examen/Player.java (
+%6java.util.Scanner"__id**
+examen.Player"
+in√¿
+o
+e/home/mauricio/Documents/2020-2/Software/Examen_Final_Mauricio_Pinto/src/main/java/examen/Player.java (	
+%7int"java.util.Scanner#nextInt()I*
+
+%6java.util.Scanner2	nextInt()¥
 ±
 o
-e/home/mauricio/Documents/2020-2/Software/Examen_Final_Mauricio_Pinto/src/main/java/examen/Player.java (
-%0examen.GameSession"__id**
+e/home/mauricio/Documents/2020-2/Software/Examen_Final_Mauricio_Pinto/src/main/java/examen/Player.java (
+%8examen.GameSession"__id**
 examen.Player"	
-session≥
-∞
+session€ÿ
 o
-e/home/mauricio/Documents/2020-2/Software/Examen_Final_Mauricio_Pinto/src/main/java/examen/Player.java* (2
-%1java.lang.String"__id**
-examen.Player"
-
-usernameôñ
-o
-e/home/mauricio/Documents/2020-2/Software/Examen_Final_Mauricio_Pinto/src/main/java/examen/Player.java (3	
-%2int"2examen.GameSession#setPiece(IILjava/lang/String;)I*
+e/home/mauricio/Documents/2020-2/Software/Examen_Final_Mauricio_Pinto/src/main/java/examen/Player.java (,	
+%9int" examen.GameSession#setPiece(II)I*
 
-%0examen.GameSession*
+%8examen.GameSession*
 ""*
-""*
-
-%1java.lang.String2setPiece(IILjava/lang/String;)"y
+""2setPiece(II)*
+2
+1*Ô
+1o
+e/home/mauricio/Documents/2020-2/Software/Examen_Final_Mauricio_Pinto/src/main/java/examen/Player.java ("y
 o
-e/home/mauricio/Documents/2020-2/Software/Examen_Final_Mauricio_Pinto/src/main/java/examen/Player.java (
-"":
-"":
+e/home/mauricio/Documents/2020-2/Software/Examen_Final_Mauricio_Pinto/src/main/java/examen/Player.java (
 ""B
 examen.Player

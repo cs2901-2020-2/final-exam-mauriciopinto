@@ -1,6 +1,6 @@
 GROUP,PACKAGE,CLASS,INSTRUCTION_MISSED,INSTRUCTION_COVERED,BRANCH_MISSED,BRANCH_COVERED,LINE_MISSED,LINE_COVERED,COMPLEXITY_MISSED,COMPLEXITY_COVERED,METHOD_MISSED,METHOD_COVERED
-Examen_Final_Mauricio_Pinto,examen,GameSession,276,48,56,2,59,13,33,6,5,5
-Examen_Final_Mauricio_Pinto,examen,Player,15,12,0,0,2,5,1,1,1,1
-Examen_Final_Mauricio_Pinto,examen,Piece,322,0,9,0,46,0,10,0,2,0
-Examen_Final_Mauricio_Pinto,examen,Main,50,0,2,0,13,0,4,0,3,0
-Examen_Final_Mauricio_Pinto,examen,Point,8,15,0,0,4,6,2,3,2,3
+Examen_Final_Mauricio_Pinto,examen,GameSession,40,312,12,50,12,69,12,32,2,11
+Examen_Final_Mauricio_Pinto,examen,Player,40,35,4,0,11,11,4,5,2,5
+Examen_Final_Mauricio_Pinto,examen,Piece,0,189,20,48,0,22,20,16,0,2
+Examen_Final_Mauricio_Pinto,examen,Main,43,0,2,0,13,0,4,0,3,0
+Examen_Final_Mauricio_Pinto,examen,Point,0,23,0,0,0,10,0,5,0,5

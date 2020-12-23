@@ -1,16 +1,12 @@
 -------------------------------------------------------------------------------
 Test set: examen.TestFunctionClass
 -------------------------------------------------------------------------------
-Tests run: 5, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 0.707 s <<< FAILURE! - in examen.TestFunctionClass
-CreateInstanceTest(examen.TestFunctionClass)  Time elapsed: 0.071 s  <<< FAILURE!
-java.lang.NullPointerException
-	at examen.TestFunctionClass.CreateInstanceTest(TestFunctionClass.java:13)
+Tests run: 8, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 0.554 s <<< FAILURE! - in examen.TestFunctionClass
+CreatePieceTest(examen.TestFunctionClass)  Time elapsed: 0.015 s  <<< FAILURE!
+java.lang.AssertionError: Lists differ at element [0]: examen.Point@3679d92e != examen.Point@47b11ec7 expected [examen.Point@3679d92e] but found [examen.Point@47b11ec7]
+	at examen.TestFunctionClass.CreatePieceTest(TestFunctionClass.java:42)
 
-CreatePieceTest(examen.TestFunctionClass)  Time elapsed: 0 s  <<< FAILURE!
-java.lang.NullPointerException
-	at examen.TestFunctionClass.CreatePieceTest(TestFunctionClass.java:20)
-
-checksetPiece(examen.TestFunctionClass)  Time elapsed: 0 s  <<< FAILURE!
-java.lang.NullPointerException
-	at examen.TestFunctionClass.checksetPiece(TestFunctionClass.java:49)
+checkStatusTest(examen.TestFunctionClass)  Time elapsed: 0.002 s  <<< FAILURE!
+java.lang.AssertionError: expected [1] but found [0]
+	at examen.TestFunctionClass.checkStatusTest(TestFunctionClass.java:75)
 

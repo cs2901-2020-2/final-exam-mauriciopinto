@@ -1,69 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Piece.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">Examen_Final_Mauricio_Pinto</a> &gt; <a href="index.source.html" class="el_package">examen</a> &gt; <span class="el_source">Piece.java</span></div><h1>Piece.java</h1><pre class="source lang-java linenums">package examen;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Piece {
     private List&lt;Point&gt; points;
 
-<span class="nc" id="L8">    public Piece (int type) {</span>
-<span class="nc bnc" id="L9" title="All 9 branches missed.">        switch (type) {</span>
-            case 0:
-<span class="nc" id="L11">                this.points.add (new Point(0, 2));</span>
-<span class="nc" id="L12">                this.points.add (new Point(1, 2));</span>
-<span class="nc" id="L13">                this.points.add (new Point(2, 2));</span>
-<span class="nc" id="L14">                this.points.add (new Point(2, 1));</span>
-<span class="nc" id="L15">                this.points.add (new Point(2, 0));</span>
-<span class="nc" id="L16">                break;</span>
-            case 1:
-<span class="nc" id="L18">                this.points.add(new Point(0, 0));</span>
-<span class="nc" id="L19">                this.points.add (new Point(0, 1));</span>
-<span class="nc" id="L20">                this.points.add (new Point(0, 2));</span>
-<span class="nc" id="L21">                this.points.add (new Point(1, 0));</span>
-<span class="nc" id="L22">                this.points.add (new Point(2, 0));</span>
-<span class="nc" id="L23">                break;</span>
-            case 2:
-<span class="nc" id="L25">                this.points.add (new Point(0, 0));</span>
-<span class="nc" id="L26">                this.points.add (new Point(0, 1));</span>
-<span class="nc" id="L27">                this.points.add (new Point(0, 2));</span>
-<span class="nc" id="L28">                break;</span>
-            case 3:
-<span class="nc" id="L30">                this.points.add (new Point(0, 1));</span>
-<span class="nc" id="L31">                this.points.add (new Point(1, 1));</span>
-<span class="nc" id="L32">                this.points.add (new Point(2, 1));</span>
-<span class="nc" id="L33">                break;</span>
-            case 4:
-<span class="nc" id="L35">                this.points.add (new Point(0, 1));</span>
-<span class="nc" id="L36">                this.points.add (new Point(1, 1));</span>
-<span class="nc" id="L37">                this.points.add (new Point(2, 0));</span>
-<span class="nc" id="L38">                this.points.add (new Point(2, 1));</span>
-<span class="nc" id="L39">                this.points.add (new Point(2, 2));</span>
-<span class="nc" id="L40">                break;</span>
-            case 5:
-<span class="nc" id="L42">                this.points.add (new Point(0, 0));</span>
-<span class="nc" id="L43">                this.points.add (new Point(0, 1));</span>
-<span class="nc" id="L44">                this.points.add (new Point(0, 2));</span>
-<span class="nc" id="L45">                this.points.add (new Point(1, 1));</span>
-<span class="nc" id="L46">                this.points.add (new Point(2, 1));</span>
-<span class="nc" id="L47">                break;</span>
-            case 6:
-<span class="nc" id="L49">                this.points.add (new Point(0, 2));</span>
-<span class="nc" id="L50">                this.points.add (new Point(1, 2));</span>
-<span class="nc" id="L51">                this.points.add (new Point(2, 1));</span>
-<span class="nc" id="L52">                this.points.add (new Point(2, 2));</span>
-<span class="nc" id="L53">                break;</span>
-            case 7:
-<span class="nc" id="L55">                this.points.add (new Point(0, 0));</span>
-<span class="nc" id="L56">                this.points.add (new Point(0, 1));</span>
-<span class="nc" id="L57">                this.points.add (new Point(1, 1));</span>
-<span class="nc" id="L58">                this.points.add (new Point(2, 1));</span>
-<span class="nc" id="L59">                break;</span>
-            default:
-                break;
+<span class="fc" id="L9">    public Piece (int type) {</span>
+<span class="fc" id="L10">        points = new ArrayList&lt;&gt;();</span>
+<span class="pc bpc" id="L11" title="3 of 10 branches missed.">        if (type == 0 || type == 1 || type == 2 || type == 5 || type == 6) {</span>
+<span class="fc" id="L12">            this.points.add (new Point(0, 2));</span>
         }
-<span class="nc" id="L63">    }</span>
+<span class="pc bpc" id="L14" title="4 of 12 branches missed.">        if (type == 1 || type == 2 || type == 3 || type == 4 || type == 5 || type == 7) {</span>
+<span class="fc" id="L15">            this.points.add (new Point(0, 1));</span>
+        }
+<span class="pc bpc" id="L17" title="3 of 8 branches missed.">        if (type == 1 || type == 2 || type == 5 || type == 7) {</span>
+<span class="fc" id="L18">            this.points.add (new Point(0, 0));</span>
+        }
+<span class="pc bpc" id="L20" title="1 of 4 branches missed.">        if (type == 0 || type == 6) {</span>
+<span class="fc" id="L21">            this.points.add (new Point(1, 2));</span>
+        }
+<span class="pc bpc" id="L23" title="3 of 8 branches missed.">        if (type == 3 || type == 4 || type == 5 || type == 7) {</span>
+<span class="fc" id="L24">            this.points.add (new Point(1, 1));</span>
+        }
+<span class="fc bfc" id="L26" title="All 2 branches covered.">        if (type == 1) {</span>
+<span class="fc" id="L27">            this.points.add (new Point(1, 0));</span>
+        }
+<span class="pc bpc" id="L29" title="1 of 6 branches missed.">        if (type == 0 || type == 4 || type == 6) {</span>
+<span class="fc" id="L30">            this.points.add (new Point(2, 2));</span>
+        }
+<span class="pc bpc" id="L32" title="4 of 12 branches missed.">        if (type == 0 || type == 3 || type == 4 || type == 5 || type == 6 || type == 7) {</span>
+<span class="fc" id="L33">            this.points.add (new Point(2, 1));</span>
+        }
+<span class="pc bpc" id="L35" title="1 of 6 branches missed.">        if (type == 0 || type == 1 || type == 4) {</span>
+<span class="fc" id="L36">            this.points.add (new Point(2, 0));</span>
+        }
+<span class="fc" id="L38">    }</span>
 
     public List&lt;Point&gt; getPoints() {
-<span class="nc" id="L66">        return points;</span>
+<span class="fc" id="L41">        return points;</span>
     }
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.4.201905082037</span></div></body></html>
