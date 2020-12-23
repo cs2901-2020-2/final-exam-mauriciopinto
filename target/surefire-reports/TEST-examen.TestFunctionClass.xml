@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="examen.TestFunctionClass" time="0.554" tests="8" errors="0" skipped="0" failures="2">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="examen.TestFunctionClass" time="0.888" tests="8" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="14"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
@@ -12,7 +12,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="US"/>
     <property name="sun.boot.library.path" value="/usr/lib/jvm/java-14-openjdk-amd64/lib"/>
-    <property name="sun.java.command" value="/home/mauricio/Documents/2020-2/Software/Examen_Final_Mauricio_Pinto/target/surefire/surefirebooter17235163168008227682.jar /home/mauricio/Documents/2020-2/Software/Examen_Final_Mauricio_Pinto/target/surefire 2020-12-23T13-30-52_961-jvmRun1 surefire5237165018153130213tmp surefire_07470266310610197885tmp"/>
+    <property name="sun.java.command" value="/home/mauricio/Documents/2020-2/Software/Examen_Final_Mauricio_Pinto/target/surefire/surefirebooter4687949089730284204.jar /home/mauricio/Documents/2020-2/Software/Examen_Final_Mauricio_Pinto/target/surefire 2020-12-23T13-50-04_175-jvmRun1 surefire3371323676143620155tmp surefire_01523164378853390271tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="/home/mauricio/Documents/2020-2/Software/Examen_Final_Mauricio_Pinto/target/test-classes:/home/mauricio/Documents/2020-2/Software/Examen_Final_Mauricio_Pinto/target/classes:/home/mauricio/.m2/repository/org/testng/testng/7.3.0/testng-7.3.0.jar:/home/mauricio/.m2/repository/com/beust/jcommander/1.78/jcommander-1.78.jar:/home/mauricio/.m2/repository/org/apache/ant/ant/1.10.3/ant-1.10.3.jar:/home/mauricio/.m2/repository/org/apache/ant/ant-launcher/1.10.3/ant-launcher-1.10.3.jar:/home/mauricio/.m2/repository/junit/junit/4.12/junit-4.12.jar:/home/mauricio/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/home/mauricio/.m2/repository/com/google/inject/guice/4.2.2/guice-4.2.2-no_aop.jar:/home/mauricio/.m2/repository/javax/inject/javax.inject/1/javax.inject-1.jar:/home/mauricio/.m2/repository/aopalliance/aopalliance/1.0/aopalliance-1.0.jar:/home/mauricio/.m2/repository/com/google/guava/guava/25.1-android/guava-25.1-android.jar:/home/mauricio/.m2/repository/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar:/home/mauricio/.m2/repository/org/checkerframework/checker-compat-qual/2.0.0/checker-compat-qual-2.0.0.jar:/home/mauricio/.m2/repository/com/google/errorprone/error_prone_annotations/2.1.3/error_prone_annotations-2.1.3.jar:/home/mauricio/.m2/repository/com/google/j2objc/j2objc-annotations/1.1/j2objc-annotations-1.1.jar:/home/mauricio/.m2/repository/org/codehaus/mojo/animal-sniffer-annotations/1.14/animal-sniffer-annotations-1.14.jar:/home/mauricio/.m2/repository/org/yaml/snakeyaml/1.21/snakeyaml-1.21.jar:/home/mauricio/.m2/repository/org/apache/logging/log4j/log4j-api/2.13.3/log4j-api-2.13.3.jar:/home/mauricio/.m2/repository/org/apache/logging/log4j/log4j-core/2.13.3/log4j-core-2.13.3.jar:"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -27,7 +27,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="/home/mauricio/Documents/2020-2/Software/Examen_Final_Mauricio_Pinto/target/surefire/surefirebooter17235163168008227682.jar"/>
+    <property name="surefire.real.class.path" value="/home/mauricio/Documents/2020-2/Software/Examen_Final_Mauricio_Pinto/target/surefire/surefirebooter4687949089730284204.jar"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="14.0.2+12-Ubuntu-118.04"/>
     <property name="user.name" value="mauricio"/>
@@ -50,22 +50,11 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="58.0"/>
   </properties>
-  <testcase name="CreateInstanceTest" classname="examen.TestFunctionClass" time="0.051"/>
-  <testcase name="CreatePieceTest" classname="examen.TestFunctionClass" time="0.015">
-    <failure message="Lists differ at element [0]: examen.Point@3679d92e != examen.Point@47b11ec7 expected [examen.Point@3679d92e] but found [examen.Point@47b11ec7]" type="java.lang.AssertionError">java.lang.AssertionError: Lists differ at element [0]: examen.Point@3679d92e != examen.Point@47b11ec7 expected [examen.Point@3679d92e] but found [examen.Point@47b11ec7]
-	at examen.TestFunctionClass.CreatePieceTest(TestFunctionClass.java:42)
-</failure>
-  </testcase>
+  <testcase name="CreateInstanceTest" classname="examen.TestFunctionClass" time="0.076"/>
+  <testcase name="CreatePieceTest" classname="examen.TestFunctionClass" time="0"/>
   <testcase name="checkCompletionsTest" classname="examen.TestFunctionClass" time="0"/>
-  <testcase name="checkSetPiece" classname="examen.TestFunctionClass" time="0.003"/>
-  <testcase name="checkStatusTest" classname="examen.TestFunctionClass" time="0.002">
-    <failure message="expected [1] but found [0]" type="java.lang.AssertionError">java.lang.AssertionError: expected [1] but found [0]
-	at examen.TestFunctionClass.checkStatusTest(TestFunctionClass.java:75)
-</failure>
-    <system-err><![CDATA[Dec 23, 2020 1:30:53 PM examen.GameSession setPiece
-INFO: Elige otro espacio!
-]]></system-err>
-  </testcase>
+  <testcase name="checkSetPiece" classname="examen.TestFunctionClass" time="0.006"/>
+  <testcase name="checkStatusTest" classname="examen.TestFunctionClass" time="0.003"/>
   <testcase name="createPlayerTest" classname="examen.TestFunctionClass" time="0.001"/>
   <testcase name="generatePointTest" classname="examen.TestFunctionClass" time="0"/>
   <testcase name="generateRandomPieceTest" classname="examen.TestFunctionClass" time="0.001"/>

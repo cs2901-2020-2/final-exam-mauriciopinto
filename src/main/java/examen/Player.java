@@ -34,6 +34,7 @@ public class Player {
     public void play () {
         while (session.getStatus() == 0) {
             setNextPiece();
+            session.displayBoard();
         }
     }
 

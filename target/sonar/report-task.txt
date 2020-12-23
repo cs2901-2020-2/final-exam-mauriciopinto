@@ -3,5 +3,5 @@ projectKey=cs2901-2020-2_final-exam-mauriciopinto
 serverUrl=https://sonarcloud.io
 serverVersion=8.0.0.15878
 dashboardUrl=https://sonarcloud.io/dashboard?id=cs2901-2020-2_final-exam-mauriciopinto
-ceTaskId=AXaQ3qWsWyIP725n0gtc
-ceTaskUrl=https://sonarcloud.io/api/ce/task?id=AXaQ3qWsWyIP725n0gtc
+ceTaskId=AXaQ7IZVwbPuUcFvwiwN
+ceTaskUrl=https://sonarcloud.io/api/ce/task?id=AXaQ7IZVwbPuUcFvwiwN

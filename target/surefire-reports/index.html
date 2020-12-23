@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -40,7 +40,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Surefire_suite" class="navigator-link">
-              <span class="suite-name border-failed">Surefire suite</span>
+              <span class="suite-name border-passed">Surefire suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -93,26 +93,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">8 methods, 2 failed,   6 passed</span>
-                  </li>
-                  <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-Surefire_suite" class="hide-methods failed suite-Surefire_suite"> (hide)</a> <!-- hide-methods failed suite-Surefire_suite -->
-                      <a href="#" panel-name="suite-Surefire_suite" class="show-methods failed suite-Surefire_suite"> (show)</a> <!-- show-methods failed suite-Surefire_suite -->
-                    </span>
-                    <div class="method-list-content failed suite-Surefire_suite">
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Surefire_suite" title="examen.TestFunctionClass" class="method navigator-link" hash-for-method="CreatePieceTest">CreatePieceTest</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Surefire_suite" title="examen.TestFunctionClass" class="method navigator-link" hash-for-method="checkStatusTest">checkStatusTest</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content failed suite-Surefire_suite -->
+                    <span class="method-stats">8 methods,   8 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -128,12 +109,22 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="examen.TestFunctionClass" class="method navigator-link" hash-for-method="CreatePieceTest">CreatePieceTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Surefire_suite" title="examen.TestFunctionClass" class="method navigator-link" hash-for-method="checkCompletionsTest">checkCompletionsTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Surefire_suite" title="examen.TestFunctionClass" class="method navigator-link" hash-for-method="checkSetPiece">checkSetPiece</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="examen.TestFunctionClass" class="method navigator-link" hash-for-method="checkStatusTest">checkStatusTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -163,38 +154,6 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Surefire_suite" class="panel Surefire_suite">
-          <div class="suite-Surefire_suite-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">examen.TestFunctionClass</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="CreatePieceTest">
-                  </a> <!-- CreatePieceTest -->
-                  <span class="method-name">CreatePieceTest</span>
-                  <div class="stack-trace">java.lang.AssertionError: Lists differ at element [0]: examen.Point@3679d92e != examen.Point@47b11ec7 expected [examen.Point@3679d92e] but found [examen.Point@47b11ec7]
-	at examen.TestFunctionClass.CreatePieceTest(TestFunctionClass.java:42)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 37 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="checkStatusTest">
-                  </a> <!-- checkStatusTest -->
-                  <span class="method-name">checkStatusTest</span>
-                  <div class="stack-trace">java.lang.AssertionError: expected [1] but found [0]
-	at examen.TestFunctionClass.checkStatusTest(TestFunctionClass.java:75)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 38 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Surefire_suite-class-failed -->
           <div class="suite-Surefire_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -210,6 +169,13 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
+                  <a name="CreatePieceTest">
+                  </a> <!-- CreatePieceTest -->
+                  <span class="method-name">CreatePieceTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
                   <a name="checkCompletionsTest">
                   </a> <!-- checkCompletionsTest -->
                   <span class="method-name">checkCompletionsTest</span>
@@ -220,6 +186,13 @@
                   <a name="checkSetPiece">
                   </a> <!-- checkSetPiece -->
                   <span class="method-name">checkSetPiece</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkStatusTest">
+                  </a> <!-- checkStatusTest -->
+                  <span class="method-name">checkStatusTest</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -300,21 +273,21 @@ data.addRows(8);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'CreateInstanceTest')
 data.setCell(0, 2, 'examen.TestFunctionClass')
-data.setCell(0, 3, 50);
+data.setCell(0, 3, 75);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'checkSetPiece')
 data.setCell(1, 2, 'examen.TestFunctionClass')
-data.setCell(1, 3, 3);
+data.setCell(1, 3, 5);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'CreatePieceTest')
+data.setCell(2, 1, 'generateRandomPieceTest')
 data.setCell(2, 2, 'examen.TestFunctionClass')
 data.setCell(2, 3, 2);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'checkCompletionsTest')
+data.setCell(3, 1, 'generatePointTest')
 data.setCell(3, 2, 'examen.TestFunctionClass')
 data.setCell(3, 3, 1);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'generateRandomPieceTest')
+data.setCell(4, 1, 'createPlayerTest')
 data.setCell(4, 2, 'examen.TestFunctionClass')
 data.setCell(4, 3, 1);
 data.setCell(5, 0, 5)
@@ -322,18 +295,18 @@ data.setCell(5, 1, 'checkStatusTest')
 data.setCell(5, 2, 'examen.TestFunctionClass')
 data.setCell(5, 3, 1);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'generatePointTest')
+data.setCell(6, 1, 'checkCompletionsTest')
 data.setCell(6, 2, 'examen.TestFunctionClass')
 data.setCell(6, 3, 0);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'createPlayerTest')
+data.setCell(7, 1, 'CreatePieceTest')
 data.setCell(7, 2, 'examen.TestFunctionClass')
 data.setCell(7, 3, 0);
 window.suiteTableData['Surefire_suite']= { tableData: data, tableDiv: 'times-div-Surefire_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 58 ms</span>
+              <span class="suite-total-time">Total running time: 85 ms</span>
               <div id="times-div-Surefire_suite">
               </div> <!-- times-div-Surefire_suite -->
             </div> <!-- times-div -->
@@ -365,36 +338,32 @@ return data;
                 <span class="method-start">0 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">CreatePieceTest</span>
-                <span class="method-start">52 ms</span>
+                <span class="method-start">81 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">checkCompletionsTest</span>
-                <span class="method-start">68 ms</span>
+                <span class="method-start">82 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">checkSetPiece</span>
-                <span class="method-start">69 ms</span>
+                <span class="method-start">83 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">checkStatusTest</span>
-                <span class="method-start">73 ms</span>
+                <span class="method-start">90 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">createPlayerTest</span>
-                <span class="method-start">75 ms</span>
+                <span class="method-start">93 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">generatePointTest</span>
-                <span class="method-start">76 ms</span>
+                <span class="method-start">95 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">generateRandomPieceTest</span>
-                <span class="method-start">77 ms</span>
+                <span class="method-start">96 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

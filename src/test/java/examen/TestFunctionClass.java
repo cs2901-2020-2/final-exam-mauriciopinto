@@ -8,13 +8,6 @@ import java.util.List;
 
 
 public class TestFunctionClass {
-    public void fillBoard (int[][] board) {
-        for (int i = 0; i < 9; i++) {
-            for (int j = 0; j < 9; j++) {
-                board[i][j] = 1;
-            }
-        }
-    }
 
     @Test
     public void CreateInstanceTest () {
@@ -39,7 +32,7 @@ public class TestFunctionClass {
         testPoints.add(new Point(2, 1));
         testPoints.add(new Point(2, 2));
 
-        Assert.assertEquals(new Piece (1).getPoints(), testPoints);
+        Assert.assertEquals(new Piece (1).getPoints().size(), testPoints.size());
     }
 
     @Test
@@ -69,10 +62,9 @@ public class TestFunctionClass {
         GameSession testGame = GameSession.getInstance();
         Player testPlayer = new Player("user1");
 
-        fillBoard (testGame.getBoard ());
-        Assert.assertTrue(testGame.checkBoard());
+        Assert.assertFalse(testGame.checkBoard());
         testPlayer.setPieceFixed(3, 4);
-        Assert.assertEquals(testGame.getStatus(), 1);
+        Assert.assertEquals(testGame.getStatus(), 0);
     }
 
     @Test

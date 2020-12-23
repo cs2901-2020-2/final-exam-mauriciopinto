@@ -1,86 +1,129 @@
 
  examen.GameSession#setPiece(II)It
-j/home/mauricio/Documents/2020-2/Software/Examen_Final_Mauricio_Pinto/src/main/java/examen/GameSession.javat t("5*Æ
+j/home/mauricio/Documents/2020-2/Software/Examen_Final_Mauricio_Pinto/src/main/java/examen/GameSession.javap p("8*∫
 3t
-j/home/mauricio/Documents/2020-2/Software/Examen_Final_Mauricio_Pinto/src/main/java/examen/GameSession.javay y(Ã…
+j/home/mauricio/Documents/2020-2/Software/Examen_Final_Mauricio_Pinto/src/main/java/examen/GameSession.java} }(Ã…
 t
-j/home/mauricio/Documents/2020-2/Software/Examen_Final_Mauricio_Pinto/src/main/java/examen/GameSession.javay y(!	
-%3int" examen.GameSession#checkMatch()I*
+j/home/mauricio/Documents/2020-2/Software/Examen_Final_Mauricio_Pinto/src/main/java/examen/GameSession.java} }(!	
+%7int" examen.GameSession#checkMatch()I*
 examen.GameSession2checkMatch()ß
 §
 t
-j/home/mauricio/Documents/2020-2/Software/Examen_Final_Mauricio_Pinto/src/main/java/examen/GameSession.javaz z(
-%4java.util.logging.Logger"__id*
+j/home/mauricio/Documents/2020-2/Software/Examen_Final_Mauricio_Pinto/src/main/java/examen/GameSession.java~ ~(
+%8java.util.logging.Logger"__id*
 ""¶
 £
 t
-j/home/mauricio/Documents/2020-2/Software/Examen_Final_Mauricio_Pinto/src/main/java/examen/GameSession.javaz z(
-%5java.util.logging.Level"__id*
-""·
-ﬁ
+j/home/mauricio/Documents/2020-2/Software/Examen_Final_Mauricio_Pinto/src/main/java/examen/GameSession.java~ ~(
+%9java.util.logging.Level"__id*
+""‚
+ﬂ
 t
-j/home/mauricio/Documents/2020-2/Software/Examen_Final_Mauricio_Pinto/src/main/java/examen/GameSession.javaz7 z(O
-%6java.lang.String"/java.lang.Integer#toString(I)Ljava/lang/String;*"
+j/home/mauricio/Documents/2020-2/Software/Examen_Final_Mauricio_Pinto/src/main/java/examen/GameSession.java~7 ~(O
+%10java.lang.String"/java.lang.Integer#toString(I)Ljava/lang/String;*"
 java.lang.Integer*
-""ùö
+""üú
 t
-j/home/mauricio/Documents/2020-2/Software/Examen_Final_Mauricio_Pinto/src/main/java/examen/GameSession.javaz z(P
-
-%7void"\java.util.logging.Logger#log(Ljava/util/logging/Level;Ljava/lang/String;Ljava/lang/Object;)V* 
+j/home/mauricio/Documents/2020-2/Software/Examen_Final_Mauricio_Pinto/src/main/java/examen/GameSession.java~ ~(P
+%11void"\java.util.logging.Logger#log(Ljava/util/logging/Level;Ljava/lang/String;Ljava/lang/Object;)V* 
 
-%4java.util.logging.Logger*
+%8java.util.logging.Logger*
 
-%5java.util.logging.Level*
-Ganaste {0} puntos!*
-
-%6java.lang.String2Blog(Ljava/util/logging/Level;Ljava/lang/String;Ljava/lang/Object;)ÙÒ
+%9java.util.logging.Level*
+Ganaste {0} puntos!*
+
+%10java.lang.String2Blog(Ljava/util/logging/Level;Ljava/lang/String;Ljava/lang/Object;)˜Ù
+v
+j/home/mauricio/Documents/2020-2/Software/Examen_Final_Mauricio_Pinto/src/main/java/examen/GameSession.javaÅ Å(,
+%12examen.Piece"6examen.GameSession#generateRandomPiece()Lexamen/Piece;*
+examen.GameSession2generateRandomPiece()¿
+Ω
+v
+j/home/mauricio/Documents/2020-2/Software/Examen_Final_Mauricio_Pinto/src/main/java/examen/GameSession.javaÅ Å(,&
+examen.GameSession"
+currentPiece"__id*
+
+%12examen.Piece”–
+v
+j/home/mauricio/Documents/2020-2/Software/Examen_Final_Mauricio_Pinto/src/main/java/examen/GameSession.javaÑ Ñ(
+%13boolean" examen.GameSession#checkBoard()Z*
+examen.GameSession2checkBoard()*
+1*Ô
+4t
+j/home/mauricio/Documents/2020-2/Software/Examen_Final_Mauricio_Pinto/src/main/java/examen/GameSession.javax x(•
+¢
 t
-j/home/mauricio/Documents/2020-2/Software/Examen_Final_Mauricio_Pinto/src/main/java/examen/GameSession.java{ {(,
-%8examen.Piece"6examen.GameSession#generateRandomPiece()Lexamen/Piece;*
-examen.GameSession2generateRandomPiece()Ω
+j/home/mauricio/Documents/2020-2/Software/Examen_Final_Mauricio_Pinto/src/main/java/examen/GameSession.javax x(
+currentPointexamen.Point"__id*
+""√
+¿
+t
+j/home/mauricio/Documents/2020-2/Software/Examen_Final_Mauricio_Pinto/src/main/java/examen/GameSession.javax x(
+currentPointexamen.Point"
+__arrayGet*
+
+%4java.util.List*
+""*
+3
+5*à
+5t
+j/home/mauricio/Documents/2020-2/Software/Examen_Final_Mauricio_Pinto/src/main/java/examen/GameSession.javay y(¬ø
+t
+j/home/mauricio/Documents/2020-2/Software/Examen_Final_Mauricio_Pinto/src/main/java/examen/GameSession.javay y()	
+%5int"examen.Point#getX()I*
+
+currentPointexamen.Point2getX()¬ø
+t
+j/home/mauricio/Documents/2020-2/Software/Examen_Final_Mauricio_Pinto/src/main/java/examen/GameSession.javay/ y(B	
+%6int"examen.Point#getY()I*
+
+currentPointexamen.Point2getY()*
+4*ù
+6t
+j/home/mauricio/Documents/2020-2/Software/Examen_Final_Mauricio_Pinto/src/main/java/examen/GameSession.javax" x(.Ω
 ∫
 t
-j/home/mauricio/Documents/2020-2/Software/Examen_Final_Mauricio_Pinto/src/main/java/examen/GameSession.java{ {(,&
+j/home/mauricio/Documents/2020-2/Software/Examen_Final_Mauricio_Pinto/src/main/java/examen/GameSession.javax" x(.
+%3examen.Piece"__id*(*&
 examen.GameSession"
-currentPiece"__id*
-
-%8examen.Piece–Õ
+currentPiece‹Ÿ
 t
-j/home/mauricio/Documents/2020-2/Software/Examen_Final_Mauricio_Pinto/src/main/java/examen/GameSession.java| |(
-%9boolean" examen.GameSession#checkBoard()Z*
-examen.GameSession2checkBoard()*
-1*¥
-4t
-j/home/mauricio/Documents/2020-2/Software/Examen_Final_Mauricio_Pinto/src/main/java/examen/GameSession.javav v(ß
+j/home/mauricio/Documents/2020-2/Software/Examen_Final_Mauricio_Pinto/src/main/java/examen/GameSession.javax" x(:
+%4java.util.List"(examen.Piece#getPoints()Ljava/util/List;*
+
+%3examen.Piece2getPoints()*
+4*¥
+7t
+j/home/mauricio/Documents/2020-2/Software/Examen_Final_Mauricio_Pinto/src/main/java/examen/GameSession.javas s(ß
 §
 t
-j/home/mauricio/Documents/2020-2/Software/Examen_Final_Mauricio_Pinto/src/main/java/examen/GameSession.javav v(
+j/home/mauricio/Documents/2020-2/Software/Examen_Final_Mauricio_Pinto/src/main/java/examen/GameSession.javas s(
 %1java.util.logging.Logger"__id*
 ""éã
 t
-j/home/mauricio/Documents/2020-2/Software/Examen_Final_Mauricio_Pinto/src/main/java/examen/GameSession.javav v(/
+j/home/mauricio/Documents/2020-2/Software/Examen_Final_Mauricio_Pinto/src/main/java/examen/GameSession.javas s(/
 
 %2void"2java.util.logging.Logger#info(Ljava/lang/String;)V* 
 
 %1java.util.logging.Logger*
 Elige otro espacio!2info(Ljava/lang/String;)"~
 t
-j/home/mauricio/Documents/2020-2/Software/Examen_Final_Mauricio_Pinto/src/main/java/examen/GameSession.javaw w(
+j/home/mauricio/Documents/2020-2/Software/Examen_Final_Mauricio_Pinto/src/main/java/examen/GameSession.javat t(
 ""*Ë
-5t
-j/home/mauricio/Documents/2020-2/Software/Examen_Final_Mauricio_Pinto/src/main/java/examen/GameSession.javau u(‰·
+8t
+j/home/mauricio/Documents/2020-2/Software/Examen_Final_Mauricio_Pinto/src/main/java/examen/GameSession.javar r(‰·
 t
-j/home/mauricio/Documents/2020-2/Software/Examen_Final_Mauricio_Pinto/src/main/java/examen/GameSession.javau u(
+j/home/mauricio/Documents/2020-2/Software/Examen_Final_Mauricio_Pinto/src/main/java/examen/GameSession.javar r(
 %0boolean""examen.GameSession#checkPiece(II)Z*
 examen.GameSession*
 ""*
 ""2checkPiece(II)*
-3
-4*˘
-1t
-j/home/mauricio/Documents/2020-2/Software/Examen_Final_Mauricio_Pinto/src/main/java/examen/GameSession.java~ ~("~
-t
-j/home/mauricio/Documents/2020-2/Software/Examen_Final_Mauricio_Pinto/src/main/java/examen/GameSession.java~ ~(
+6
+7*˛
+1v
+j/home/mauricio/Documents/2020-2/Software/Examen_Final_Mauricio_Pinto/src/main/java/examen/GameSession.javaÜ Ü("Ä
+v
+j/home/mauricio/Documents/2020-2/Software/Examen_Final_Mauricio_Pinto/src/main/java/examen/GameSession.javaÜ Ü(
 "":
 "":
 ""B

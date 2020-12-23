@@ -50,16 +50,12 @@ public class GameSession {
 
     public boolean checkPiece (int x, int y) {
         for (Point currentPoint : currentPiece.getPoints()) {
-            if (x - currentPoint.getX() < 0 || y + currentPoint.getY() > 8 || x < 0 || x > 8 || y < 0 || y > 8)
+            if (x + currentPoint.getX() > 8 || y - currentPoint.getY() < 0 || x < 0 || x > 8 || y < 0 || y > 8)
                 return false;
             else {
-                if (board[x - currentPoint.getX()][y + currentPoint.getY()] == 1)
+                if (board[x + currentPoint.getX()][y - currentPoint.getY()] == 1)
                     return false;
             }
-        }
-
-        for (Point currentPoint : currentPiece.getPoints()) {
-            board[x - currentPoint.getX()][y + currentPoint.getY()] = 1;
         }
         return true;
     }
@@ -114,13 +110,25 @@ public class GameSession {
     }
 
     public int setPiece (int x, int y) {
+        /*Revisar si se puede colocar en las coordenadas*/
         if (!checkPiece (x, y)) {
             logger.info ("Elige otro espacio!");
             return -1;
         }
+
+        /*Llenar los espacios con la pieza*/
+        for (Point currentPoint : currentPiece.getPoints()) {
+            board[x + currentPoint.getX()][y - currentPoint.getY()] = 1;
+        }
+
+        /*Revisar si se logró obtener puntos*/
         int points = checkMatch();
         logger.log (Level.INFO, "Ganaste {0} puntos!", Integer.toString(points));
+
+        /*Generar siguiente pieza*/
         currentPiece = generateRandomPiece();
+
+        /*Revisar si es posible colocar la nueva pieza*/
         if (checkBoard ())
             status = 1;
         return points;
@@ -139,12 +147,13 @@ public class GameSession {
     }
 
     public void displayBoard () {
-        String line = "";
+        StringBuilder line = new StringBuilder();
         for (int i = 0; i < 9; i++) {
             for (int j = 0; j < 9; j++) {
-                line += Integer.toString(i);
+                line.append(Integer.toString(board[i][j]));
             }
-            logger.info(line);
+            logger.info(line.toString());
+            line = new StringBuilder();
         }
     }
 }

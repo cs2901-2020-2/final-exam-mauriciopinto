@@ -50,102 +50,111 @@ public class GameSession {
 
     public boolean checkPiece (int x, int y) {
 <span class="fc bfc" id="L52" title="All 2 branches covered.">        for (Point currentPoint : currentPiece.getPoints()) {</span>
-<span class="pc bpc" id="L53" title="5 of 12 branches missed.">            if (x - currentPoint.getX() &lt; 0 || y + currentPoint.getY() &gt; 8 || x &lt; 0 || x &gt; 8 || y &lt; 0 || y &gt; 8)</span>
+<span class="pc bpc" id="L53" title="4 of 12 branches missed.">            if (x + currentPoint.getX() &gt; 8 || y - currentPoint.getY() &lt; 0 || x &lt; 0 || x &gt; 8 || y &lt; 0 || y &gt; 8)</span>
 <span class="fc" id="L54">                return false;</span>
             else {
-<span class="fc bfc" id="L56" title="All 2 branches covered.">                if (board[x - currentPoint.getX()][y + currentPoint.getY()] == 1)</span>
+<span class="fc bfc" id="L56" title="All 2 branches covered.">                if (board[x + currentPoint.getX()][y - currentPoint.getY()] == 1)</span>
 <span class="fc" id="L57">                    return false;</span>
             }
 <span class="fc" id="L59">        }</span>
-
-<span class="fc bfc" id="L61" title="All 2 branches covered.">        for (Point currentPoint : currentPiece.getPoints()) {</span>
-<span class="fc" id="L62">            board[x - currentPoint.getX()][y + currentPoint.getY()] = 1;</span>
-<span class="fc" id="L63">        }</span>
-<span class="fc" id="L64">        return true;</span>
+<span class="fc" id="L60">        return true;</span>
     }
 
     public int checkMatch() {
-<span class="fc" id="L68">        int points = 0;</span>
-<span class="fc" id="L69">        int completions = 0;</span>
+<span class="fc" id="L64">        int points = 0;</span>
+<span class="fc" id="L65">        int completions = 0;</span>
         boolean rowColBlockIsComplete;
 
         /*Check rows*/
-<span class="fc bfc" id="L73" title="All 2 branches covered.">        for (int i = 0; i &lt; 9; i++) {</span>
-<span class="fc" id="L74">            rowColBlockIsComplete = true;</span>
-<span class="fc bfc" id="L75" title="All 2 branches covered.">            for (int j = 0; j &lt; 9; j++) {</span>
-<span class="fc bfc" id="L76" title="All 2 branches covered.">                if (board[i][j] == 0)</span>
-<span class="fc" id="L77">                    rowColBlockIsComplete = false;</span>
+<span class="fc bfc" id="L69" title="All 2 branches covered.">        for (int i = 0; i &lt; 9; i++) {</span>
+<span class="fc" id="L70">            rowColBlockIsComplete = true;</span>
+<span class="fc bfc" id="L71" title="All 2 branches covered.">            for (int j = 0; j &lt; 9; j++) {</span>
+<span class="fc bfc" id="L72" title="All 2 branches covered.">                if (board[i][j] == 0)</span>
+<span class="fc" id="L73">                    rowColBlockIsComplete = false;</span>
             }
-<span class="fc bfc" id="L79" title="All 2 branches covered.">            if (rowColBlockIsComplete) {</span>
-<span class="fc" id="L80">                points += 120;</span>
-<span class="fc" id="L81">                completions++;</span>
+<span class="fc bfc" id="L75" title="All 2 branches covered.">            if (rowColBlockIsComplete) {</span>
+<span class="fc" id="L76">                points += 120;</span>
+<span class="fc" id="L77">                completions++;</span>
             }
         }
 
         /*Check columns*/
-<span class="fc bfc" id="L86" title="All 2 branches covered.">        for (int i = 0; i &lt; 9; i++) {</span>
-<span class="fc" id="L87">            rowColBlockIsComplete = true;</span>
-<span class="fc bfc" id="L88" title="All 2 branches covered.">            for (int j = 0; j &lt; 9; j++) {</span>
-<span class="fc bfc" id="L89" title="All 2 branches covered.">                if (board[j][i] == 0)</span>
-<span class="fc" id="L90">                    rowColBlockIsComplete = false;</span>
+<span class="fc bfc" id="L82" title="All 2 branches covered.">        for (int i = 0; i &lt; 9; i++) {</span>
+<span class="fc" id="L83">            rowColBlockIsComplete = true;</span>
+<span class="fc bfc" id="L84" title="All 2 branches covered.">            for (int j = 0; j &lt; 9; j++) {</span>
+<span class="fc bfc" id="L85" title="All 2 branches covered.">                if (board[j][i] == 0)</span>
+<span class="fc" id="L86">                    rowColBlockIsComplete = false;</span>
             }
-<span class="pc bpc" id="L92" title="1 of 2 branches missed.">            if (rowColBlockIsComplete) {</span>
-<span class="nc" id="L93">                points += 120;</span>
-<span class="nc" id="L94">                completions++;</span>
+<span class="pc bpc" id="L88" title="1 of 2 branches missed.">            if (rowColBlockIsComplete) {</span>
+<span class="nc" id="L89">                points += 120;</span>
+<span class="nc" id="L90">                completions++;</span>
             }
         }
         /*Check blocks*/
-<span class="fc bfc" id="L98" title="All 2 branches covered.">        for (int i = 0; i &lt; 9; i+=3) {</span>
-<span class="fc bfc" id="L99" title="All 2 branches covered.">            for (int j = 0; j &lt; 9; j+=3) {</span>
-<span class="fc" id="L100">                rowColBlockIsComplete = true;</span>
-<span class="fc bfc" id="L101" title="All 2 branches covered.">                for (int k = 0; k &lt; 3; k++) {</span>
-<span class="fc bfc" id="L102" title="All 2 branches covered.">                    for (int l = 0; l &lt; 3; l++) {</span>
-<span class="fc bfc" id="L103" title="All 2 branches covered.">                        if (board[i + k][j + l] == 0)</span>
-<span class="fc" id="L104">                            rowColBlockIsComplete = false;</span>
+<span class="fc bfc" id="L94" title="All 2 branches covered.">        for (int i = 0; i &lt; 9; i+=3) {</span>
+<span class="fc bfc" id="L95" title="All 2 branches covered.">            for (int j = 0; j &lt; 9; j+=3) {</span>
+<span class="fc" id="L96">                rowColBlockIsComplete = true;</span>
+<span class="fc bfc" id="L97" title="All 2 branches covered.">                for (int k = 0; k &lt; 3; k++) {</span>
+<span class="fc bfc" id="L98" title="All 2 branches covered.">                    for (int l = 0; l &lt; 3; l++) {</span>
+<span class="fc bfc" id="L99" title="All 2 branches covered.">                        if (board[i + k][j + l] == 0)</span>
+<span class="fc" id="L100">                            rowColBlockIsComplete = false;</span>
                     }
                 }
-<span class="pc bpc" id="L107" title="1 of 2 branches missed.">                if (rowColBlockIsComplete) {</span>
-<span class="nc" id="L108">                    points += 150;</span>
-<span class="nc" id="L109">                    completions++;</span>
+<span class="pc bpc" id="L103" title="1 of 2 branches missed.">                if (rowColBlockIsComplete) {</span>
+<span class="nc" id="L104">                    points += 150;</span>
+<span class="nc" id="L105">                    completions++;</span>
                 }
             }
         }
-<span class="fc" id="L113">        return points * completions;</span>
+<span class="fc" id="L109">        return points * completions;</span>
     }
 
     public int setPiece (int x, int y) {
-<span class="fc bfc" id="L117" title="All 2 branches covered.">        if (!checkPiece (x, y)) {</span>
-<span class="fc" id="L118">            logger.info (&quot;Elige otro espacio!&quot;);</span>
-<span class="fc" id="L119">            return -1;</span>
+        /*Revisar si se puede colocar en las coordenadas*/
+<span class="fc bfc" id="L114" title="All 2 branches covered.">        if (!checkPiece (x, y)) {</span>
+<span class="fc" id="L115">            logger.info (&quot;Elige otro espacio!&quot;);</span>
+<span class="fc" id="L116">            return -1;</span>
         }
-<span class="fc" id="L121">        int points = checkMatch();</span>
-<span class="fc" id="L122">        logger.log (Level.INFO, &quot;Ganaste {0} puntos!&quot;, Integer.toString(points));</span>
-<span class="fc" id="L123">        currentPiece = generateRandomPiece();</span>
-<span class="pc bpc" id="L124" title="1 of 2 branches missed.">        if (checkBoard ())</span>
-<span class="nc" id="L125">            status = 1;</span>
-<span class="fc" id="L126">        return points;</span>
+
+        /*Llenar los espacios con la pieza*/
+<span class="fc bfc" id="L120" title="All 2 branches covered.">        for (Point currentPoint : currentPiece.getPoints()) {</span>
+<span class="fc" id="L121">            board[x + currentPoint.getX()][y - currentPoint.getY()] = 1;</span>
+<span class="fc" id="L122">        }</span>
+
+        /*Revisar si se logró obtener puntos*/
+<span class="fc" id="L125">        int points = checkMatch();</span>
+<span class="fc" id="L126">        logger.log (Level.INFO, &quot;Ganaste {0} puntos!&quot;, Integer.toString(points));</span>
+
+        /*Generar siguiente pieza*/
+<span class="fc" id="L129">        currentPiece = generateRandomPiece();</span>
+
+        /*Revisar si es posible colocar la nueva pieza*/
+<span class="pc bpc" id="L132" title="1 of 2 branches missed.">        if (checkBoard ())</span>
+<span class="nc" id="L133">            status = 1;</span>
+<span class="fc" id="L134">        return points;</span>
     }
 
     public int getStatus() {
-<span class="fc" id="L130">        return status;</span>
+<span class="fc" id="L138">        return status;</span>
     }
 
     public int[][] getBoard () {
-<span class="fc" id="L134">        return board;</span>
+<span class="fc" id="L142">        return board;</span>
     }
 
     public Piece getCurrentPiece() {
-<span class="nc" id="L138">        return currentPiece;</span>
+<span class="nc" id="L146">        return currentPiece;</span>
     }
 
     public void displayBoard () {
-<span class="nc" id="L142">        String line = &quot;&quot;;</span>
-<span class="nc bnc" id="L143" title="All 2 branches missed.">        for (int i = 0; i &lt; 9; i++) {</span>
-<span class="nc bnc" id="L144" title="All 2 branches missed.">            for (int j = 0; j &lt; 9; j++) {</span>
-<span class="nc" id="L145">                line += Integer.toString(i);</span>
+<span class="nc" id="L150">        StringBuilder line = new StringBuilder();</span>
+<span class="nc bnc" id="L151" title="All 2 branches missed.">        for (int i = 0; i &lt; 9; i++) {</span>
+<span class="nc bnc" id="L152" title="All 2 branches missed.">            for (int j = 0; j &lt; 9; j++) {</span>
+<span class="nc" id="L153">                line.append(Integer.toString(board[i][j]));</span>
             }
-<span class="nc" id="L147">            logger.info(line);</span>
+<span class="nc" id="L155">            logger.info(line.toString());</span>
+<span class="nc" id="L156">            line = new StringBuilder();</span>
         }
-<span class="nc" id="L149">    }</span>
+<span class="nc" id="L158">    }</span>
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.4.201905082037</span></div></body></html>
